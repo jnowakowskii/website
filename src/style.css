@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
 html{
-    font-family:'Times New Roman', Times, serif;
+    font-family: "Jersey 10";
+    font-weight: 400;
+    font-size:2rem;
+}
+
+h1{
+    font-size:4rem;
+    text-align: center;
 }
 
 p{
-    color: blue;
+    color: black;
+    text-align: center;
 }
