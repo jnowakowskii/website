@@ -1,17 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
 
-html{
+@media screen and (min-width: 769px){
+    .mobile-menu-toggle{
+        display:none;
+    }
+    .navigation-menu{
+        display:flex;
+    }
+}
+
+:root {
+    --lightblue: color(#0c879a);
+    --darkblue: color(#024377);
+    --lightgrey: color(#e4e4e4);
+    --almostblack: color(#1d1c1c);
+}
+
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html {
     font-family: "Jersey 10";
-    font-weight: 400;
-    font-size:2rem;
+    font-size: 2.2rem;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    scroll-behavior: smooth;
 }
 
-h1{
-    font-size:4rem;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-top: 1.8rem;
+    font-size: 3rem;
     text-align: center;
 }
 
-p{
-    color: black;
+h2{
+    font-size: 2.4rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
     text-align: center;
+}
+
+main{
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    justify-content: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    padding: 0.7rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer-div {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-div p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navigation-bar {
+    background-color: black;
+    display: flex;
+    color: white;
+    align-items: center;
+    display: flex;
+    padding: 0px 24px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 110px;
+    overflow-y: hidden;
+}
+
+#menu-hamburger {
+    font-size: 1.5rem;
+    color: white;
+    padding-bottom: 0;
+}
+
+.navigation-bar {
+    transition: transform 0.4s ease;
+}
+
+.navigation-bar.hidden {
+    transform: translateY(-110px);
+}
+
+.navigation-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 4rem;
+}
+
+.navigation-item {
+    margin-left: 1.3rem;
+}
+
+.navigation-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.4 ease;
+}
+
+.navigation-link:hover {
+    text-decoration: underline;
 }

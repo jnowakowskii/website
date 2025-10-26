@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+
+@media screen and (max-width: 768px) {
+    .navigation-menu {
+        display: none;
+        color: white;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin: 0;
+        background-color: black;
+        padding: 1rem 0;
+        transition: all 0.4s ease;
+        z-index: 9;
+    }
+
+    .navigation-bar{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation-menu.active{
+        display:flex;
+    }
+
+    .navigation-item{
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    .mobile-menu-toggle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 36px;
+        cursor: pointer;
+        margin: 0.5rem 0;
+        padding: 0.25rem;
+        align-self: center;
+        z-index: 30;
+    }
+
+    .mobile-menu-toggle .bar{
+        display: inline-block;
+        font-size: 28px;
+        line-height: 1;
+        color: white;
+        width: auto;
+        height: auto;
+        background: transparent;
+        transition: all 0.25s ease;
+        user-select: none;
+    }
+
+    main {
+        text-align: center;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        justify-content: center;
+    }
+
+    footer{
+        width: 100vw;
+        margin: 0;
+    }
+}
