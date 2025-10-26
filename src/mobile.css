@@ -1,61 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
 
 @media screen and (max-width: 768px) {
-    .navigation-menu {
-        display: none;
-        color: white;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        margin: 0;
-        background-color: black;
-        padding: 1rem 0;
-        transition: all 0.4s ease;
-        z-index: 9;
-    }
-
-    .navigation-bar{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .navigation-menu.active{
-        display:flex;
-    }
-
-    .navigation-item{
-        margin: 0.5rem 0;
-        text-align: center;
-    }
-
-    .mobile-menu-toggle{
+    .navigation-bar {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 40px;
-        height: 36px;
-        cursor: pointer;
-        margin: 0.5rem 0;
-        padding: 0.25rem;
-        align-self: center;
-        z-index: 30;
+        padding: 0.5rem 12px;
+        height: auto;
     }
 
-    .mobile-menu-toggle .bar{
-        display: inline-block;
-        font-size: 28px;
-        line-height: 1;
+    .navigation-menu {
+        display: flex;
         color: white;
-        width: auto;
-        height: auto;
-        background: transparent;
-        transition: all 0.25s ease;
-        user-select: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        position: static;
+        margin: 0;
+        background-color: transparent;
+        padding: 0.25rem 0;
+        transition: none;
+        z-index: 9;
+        flex-wrap: wrap;
+        font-size: 1rem;
+    }
+
+    .navigation-item {
+        margin: 0;
+        text-align: center;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
     }
 
     main {
@@ -65,7 +44,7 @@
         justify-content: center;
     }
 
-    footer{
+    footer {
         width: 100vw;
         margin: 0;
     }

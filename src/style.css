@@ -119,7 +119,7 @@ footer {
 }
 
 .navigation-bar.hidden {
-    transform: translateY(-110px);
+    transform: translateY(-100%);
 }
 
 .navigation-menu {
