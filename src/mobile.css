@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+
+@media screen and (max-width: 768px) {
+    .navigation-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 12px;
+        height: auto;
+    }
+
+    .navigation-menu {
+        display: flex;
+        color: white;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        position: static;
+        margin: 0;
+        background-color: transparent;
+        padding: 0.25rem 0;
+        transition: none;
+        z-index: 9;
+        flex-wrap: wrap;
+        font-size: 1rem;
+    }
+
+    .navigation-item {
+        margin: 0;
+        text-align: center;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+
+    main {
+        text-align: center;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        justify-content: center;
+    }
+
+    footer {
+        width: 100vw;
+        margin: 0;
+    }
+}
