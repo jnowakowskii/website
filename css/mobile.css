@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
 
 @media screen and (max-width: 768px) {
+    html {
+        font-size: 1.6rem;
+    }
+
     body {
-        padding-top: 6rem;
+        padding-top: 7rem;
     }
 
     .navigation-bar {
@@ -20,7 +24,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: 0.5rem;
         width: 100%;
         position: static;
         margin: 0;
@@ -43,13 +47,19 @@
 
     main {
         text-align: center;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         justify-content: center;
     }
 
     .project-grid {
         grid-template-columns: 1fr;
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .project-card {
+        padding: 1.5rem;
     }
 
     footer {
@@ -60,9 +70,17 @@
     .footer-div {
         flex-direction: column;
         gap: 0.5rem;
+        text-align: center;
     }
 
-    h1, h2 {
+    h1 {
+        font-size: 2.5rem;
+        width: auto;
+        word-wrap: break-word;
+    }
+
+    h2 {
+        font-size: 2rem;
         width: auto;
         word-wrap: break-word;
     }
