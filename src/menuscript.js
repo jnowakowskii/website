@@ -9,10 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const currentScrollY = window.scrollY;
 
         if (currentScrollY > lastScrollY && currentScrollY > 50) {
-            // Scroll down
             nav.classList.add("hidden");
         } else {
-            // Scroll up or at top
             nav.classList.remove("hidden");
         }
 

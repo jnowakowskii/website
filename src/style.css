@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
 
-@media screen and (min-width: 769px){
-    .mobile-menu-toggle{
-        display:none;
+@media screen and (min-width: 769px) {
+    .mobile-menu-toggle {
+        display: none;
     }
-    .navigation-menu{
-        display:flex;
+
+    .navigation-menu {
+        display: flex;
     }
 }
 
@@ -41,7 +42,7 @@ h1 {
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 2.4rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -51,7 +52,7 @@ p {
     text-align: center;
 }
 
-main{
+main {
     text-align: center;
     margin-left: 3rem;
     margin-right: 3rem;
