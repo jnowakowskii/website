@@ -44,6 +44,10 @@
         justify-content: center;
     }
 
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
     footer {
         width: 100vw;
         margin: 0;
