@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
 
 @media screen and (min-width: 769px) {
-    .mobile-menu-toggle {
-        display: none;
-    }
+
 
     .navigation-menu {
         display: flex;
@@ -11,10 +9,10 @@
 }
 
 :root {
-    --lightblue: color(#0c879a);
-    --darkblue: color(#024377);
-    --lightgrey: color(#e4e4e4);
-    --almostblack: color(#1d1c1c);
+    --lightblue: #0c879a;
+    --darkblue: #024377;
+    --lightgrey: #e4e4e4;
+    --almostblack: #1d1c1c;
 }
 
 * {
@@ -109,7 +107,6 @@ footer p {
     display: flex;
     color: white;
     align-items: center;
-    display: flex;
     padding: 0px 24px;
     position: fixed;
     width: 100%;
@@ -118,15 +115,6 @@ footer p {
     z-index: 10;
     height: 110px;
     overflow-y: hidden;
-}
-
-#menu-hamburger {
-    font-size: 1.5rem;
-    color: white;
-    padding-bottom: 0;
-}
-
-.navigation-bar {
     transition: transform 0.4s ease;
 }
 

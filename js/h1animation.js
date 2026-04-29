@@ -11,7 +11,10 @@ if (h1) {
             setTimeout(typeWriter, 75);
         } else {
             new TypewriterHover(h1);
+            document.dispatchEvent(new CustomEvent("h1AnimationFinished"));
         }
     }
     typeWriter();
+} else {
+    document.dispatchEvent(new CustomEvent("h1AnimationFinished"));
 }

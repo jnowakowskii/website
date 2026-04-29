@@ -13,5 +13,23 @@ document.addEventListener("DOMContentLoaded", function () {
         rootMargin: "0px 0px -50px 0px"
     });
 
-    reveals.forEach(el => observer.observe(el));
+    const h1 = document.querySelector("h1");
+
+    if (h1) {
+        reveals.forEach(el => {
+            if (el === h1) {
+                observer.observe(el);
+            }
+        });
+
+        document.addEventListener("h1AnimationFinished", () => {
+            reveals.forEach(el => {
+                if (el !== h1) {
+                    observer.observe(el);
+                }
+            });
+        });
+    } else {
+        reveals.forEach(el => observer.observe(el));
+    }
 });
