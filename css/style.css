@@ -83,58 +83,17 @@ footer {
     color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 0.6rem;
     box-sizing: border-box;
     position: relative;
 }
 
-.footer-div {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    padding: 0 1rem;
-    box-sizing: border-box;
-}
-
-.footer-left,
-.footer-right,
-.footer-center {
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
-.footer-left {
-    justify-content: flex-start;
-    font-size: 0.7rem;
-}
-
-.footer-center {
-    justify-content: center;
-}
-
-.footer-center p {
+footer p {
     margin: 0;
     padding: 0;
     font-size: 0.7rem;
-}
-
-.footer-right {
-    justify-content: flex-end;
-    font-size: 0.7rem;
-}
-
-.status-dot {
-    width: 15px;
-    height: 15px;
-    background-color: #11af17;
-    border: 2px solid white;
-    margin-right: 0.3rem;
 }
 
 .navigation-bar {
