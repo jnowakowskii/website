@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     body {
@@ -68,13 +68,13 @@
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.6rem;
         width: auto;
         word-wrap: break-word;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         width: auto;
         word-wrap: break-word;
     }
